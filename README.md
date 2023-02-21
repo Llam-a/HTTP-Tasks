@@ -1,2 +1,2 @@
 # HTTP-Tasks
-*HTTP Protocol aka HyperText Transfer Protocol
+*HTTP Protocol (HyperText Transfer Protocol)
