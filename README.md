@@ -20,7 +20,40 @@
    
 *HTTP Requests
 
- -HTTP Request hiểu một cách đơn giản là các thông tin sẽ được gửi từ khách hàng (client) lên server. Server sẽ có nhiệm vụ tìm và xử lý các loại dữ liệu, thông tin, client mong muốn. HTTP Request có thể tồn tại dưới file text hoặc dưới dạng XML hoặc dạng Json. 
+- HTTP Request hiểu một cách đơn giản là các thông tin sẽ được gửi từ khách hàng (client) lên server. Server sẽ có nhiệm vụ tìm và xử lý các loại dữ liệu, thông tin, client mong muốn. HTTP Request có thể tồn tại dưới file text hoặc dưới dạng XML hoặc dạng Json. 
  
  ![image](https://user-images.githubusercontent.com/115911041/220544766-f3afe55a-eaad-40c1-a396-4ac7f600081b.png)
+ 
+  -Cấu trúc HTTP Request:
+ 
+ - ![image](https://user-images.githubusercontent.com/115911041/220554196-992ed92a-d27e-4cf1-8e25-fce4ae7127bf.png) 
+
+ Request line là dòng đầu tiên trong HTTP request. Nó bao gồm 3 phần:
+
+  - Phương thức HTTP được sử dụng
+  - URI( Uniform Resource Identifier) giúp xác định các tài nguyên mà client yêu cầu.
+  - Phiên bản của giao thức HTTP
+  
+ Request header giúp client có thể gửi yêu cầu lên server. Mỗi yêu cầu sẽ kèm theo các thông số, và các thông số đó được gọi là Header Parameters. Trình duyệt và server sẽ dựa vào các thông số header này để trả dữ liệu và hiển thị dữ liệu cho phù hợp.Các thông số mà các bạn có thể gặp khá thường xuyên như:
+
+  - User-Agent: cho phép server xác định ứng dụng, hệ điều hành, nhà cung cấp và phiên bản.
+  - Connection: kiểm soát kết nối mạng. Nói cách khác, cho phép dừng hoặc tiếp tục kết nối sau khi server thực hiện xong yêu cầu.
+  - Cache-Control: chỉ định chính sách bộ nhớ đệm của trình duyệt.
+  - Accept-Language: cho biết tất cả các ngôn ngữ (tự nhiên) mà client có thể hiểu được.
+  Request body cho phép client gừi đến yêu cầu bổ sung cần server thực hiện như: tạo mới hoặc cập nhật dữ liệu mà không thể truyền trên Header Parameters.
+
+  Request body thường được sử dụng trong các phương thức Post, Put, Patch.
+
+  
+
+ 
+ 
+ 
+ 
+ *HTTP Responses
+ 
+ - 
+
+  
+
 
