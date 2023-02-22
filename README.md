@@ -42,16 +42,22 @@
   - Accept-Language: cho biết tất cả các ngôn ngữ (tự nhiên) mà client có thể hiểu được.
   
   +Request body cho phép client gừi đến yêu cầu bổ sung cần server thực hiện như: tạo mới hoặc cập nhật dữ liệu mà không thể truyền trên Header Parameters.Thường được sử dụng trong các phương thức Post, Put, Patch.
-
+   
+  -Một vài phương thức HTTP Request:
   
+   - GET: Phương thức này dùng để truy cập dữ liệu từ máy chủ cụ thể.
+   - HEAD: Phương thức không có thông báo trong nội dung, dùng khi đánh giá tính khả dụng của API tại điểm cuối.
+   - POST: Phương thức này khá phổ biến, dùng khi muốn gửi thông tin đến máy chủ, cập nhật tài nguyên. Thông tin lưu trữ ở phần thân của HTTP Request sẽ được sử dụng.
+   - PUT: Tài nguyên được cập nhật và truyền tải tuy nhiên các yêu cầu PUT sẽ không cố định, kết quả không đổi dù là bạn có yêu cầu PUT nhiều lần.
+   - DELETE: Người dùng có thể xóa một tài nguyên nào đó trên máy chủ.
+   - PATCH: PATCH cập nhật thông tin từ máy chủ, có áp dụng sửa lỗi một phần.
+   - TRACE: Phương thức TRACE là cách để kiểm tra sự lặp lại theo đường dẫn của tài nguyên đích, dùng để chạy các thử nghiệm gỡ lỗi và thực hiện thao tác chẩn đoán trên API.
+   -  CONNECT: CONNECT có tác dụng tạo kết nối đến máy chủ thông qua HTTP và tham số URL.
+ 
 
+*HTTP Responses
  
  
- 
- 
- *HTTP Responses
- 
- - 
 
   
 
