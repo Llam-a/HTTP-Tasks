@@ -28,11 +28,11 @@
  
  - ![image](https://user-images.githubusercontent.com/115911041/220554196-992ed92a-d27e-4cf1-8e25-fce4ae7127bf.png) 
 
- +Request line là dòng đầu tiên trong HTTP request. Nó bao gồm 3 phần:
+ +Request line: đây là dòng đầu tiên của HTTP Request, với ba loại chính là method (phương thức), path (đường dẫn) hay URL và HTTP version (phiên bản giao thức). Cụ thể:
 
-  - Phương thức HTTP được sử dụng
-  - URI( Uniform Resource Identifier) giúp xác định các tài nguyên mà client yêu cầu.
-  - Phiên bản của giao thức HTTP
+  - Phương thức (method) gồm nhiều loại nhưng phổ biến nhất là GET và POST. Trong đó, phương thức GET có tác dụng dùng để yêu cầu các tài nguyên cung cấp trong URL.
+  - Đường dẫn (path) có tác dụng định danh các nguồn tài nguyên được yêu cầu bởi khách hàng, người dùng và bắt buộc phải có dấu “/”.
+  - Phiên bản giao thức (HTTP version): Đây là phiên bản HTTP khách hàng dùng khá nhiều, trong đó phổ biến nhất là HTTP/1.0 hay HTTP/1.1.
   
  +Request header giúp client có thể gửi yêu cầu lên server. Mỗi yêu cầu sẽ kèm theo các thông số, và các thông số đó được gọi là Header Parameters. Trình duyệt và server sẽ dựa vào các thông số header này để trả dữ liệu và hiển thị dữ liệu cho phù hợp.Các thông số mà các bạn có thể gặp khá thường xuyên như:
 
