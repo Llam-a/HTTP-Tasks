@@ -73,6 +73,10 @@
    Có thể giải thích như sau
    
    ![image](https://user-images.githubusercontent.com/115911041/220649247-771889f9-41c1-4b9c-84cd-a467798d18fb.png)
+   
+   HTTP-version: phiên bản HTTP cao nhất mà server hỗ trợ.
+   Status-Code: mã kết quả trả về.
+   Reason-Phrase: mô tả về Status-Code.
 
 
  
