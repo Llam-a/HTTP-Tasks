@@ -70,13 +70,27 @@
   
   ![image](https://user-images.githubusercontent.com/115911041/220648862-c30de896-442b-45ea-98a6-440dba32cc29.png)
      
+   HTTP-version: phiên bản HTTP cao nhất mà server hỗ trợ.
+   
+   Status-Code: mã kết quả trả về.
+   
+   Reason-Phrase: mô tả về Status-Code.
+   
    Có thể giải thích như sau
    
    ![image](https://user-images.githubusercontent.com/115911041/220649247-771889f9-41c1-4b9c-84cd-a467798d18fb.png)
    
-   HTTP-version: phiên bản HTTP cao nhất mà server hỗ trợ.
-   Status-Code: mã kết quả trả về.
-   Reason-Phrase: mô tả về Status-Code.
+   -HTTP response status codes: Cho biết liệu một yêu cầu HTTP cụ thể đã được hoàn tất thành công hay chưa. Các câu trả lời được nhóm thành năm loại:
+
+      - Informational responses (100 – 199)
+      - Successful responses (200 – 299)
+      - Redirection messages (300 – 399)
+      - Client error responses (400 – 499)
+      - Server error responses (500 – 599)
+   
+   
+   
+  
 
 
  
