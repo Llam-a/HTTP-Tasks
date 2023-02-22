@@ -1,5 +1,5 @@
 # HTTP-Tasks
-* HTTP Protocol (HyperText Transfer Protocol)
+*HTTP Protocol (HyperText Transfer Protocol)
 
  -HTTP là gì:
 - Sử dụng Port 80
@@ -18,6 +18,6 @@
  -Điểm yếu:
 - Các thông tin được gửi đi qua giao thức HTTP (bao gồm địa chỉ IP, các thông tin mà bạn nhập vào website…) cũng không hề được mã hóa và bảo mật. Đây chính là kẽ hở mà nhiều hacker đã lợi dụng để đánh cắp thông tin người dùng, thường được gọi là tấn công sniffing. 
    
-* HTTP Requests
+*HTTP Requests
 
  -
