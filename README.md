@@ -54,8 +54,28 @@
    - TRACE: Phương thức TRACE là cách để kiểm tra sự lặp lại theo đường dẫn của tài nguyên đích, dùng để chạy các thử nghiệm gỡ lỗi và thực hiện thao tác chẩn đoán trên API.
    -  CONNECT: CONNECT có tác dụng tạo kết nối đến máy chủ thông qua HTTP và tham số URL.
  
-
 *HTTP Responses
+ 
+- HTTP Response được gọi là “thông báo phản hồi HTTP“. Đây là kết quả server trả về cho client.
+
+![image](https://user-images.githubusercontent.com/115911041/220646314-f023597b-f0e5-46e6-99fd-b0c88351b347.png)
+
+  -Nguyên lí hoạt động HTTP response:
+  
+  - Khi truy cập 1 địa chỉ abcdxyz.com, kết quả trả về (response) chính là giao diện của website và các thông tin của header.
+
+  -Cấu trúc của HTTP response:
+  
+  - Sau khi nhận và phiên dịch thông báo yêu cầu, một Server gửi tín hiệu phản hồi với một thông báo phản hồi HTTP với cú pháp như sau:
+  
+  ![image](https://user-images.githubusercontent.com/115911041/220648862-c30de896-442b-45ea-98a6-440dba32cc29.png)
+     
+   Có thể giải thích như sau
+   
+   ![image](https://user-images.githubusercontent.com/115911041/220649247-771889f9-41c1-4b9c-84cd-a467798d18fb.png)
+
+
+ 
  
  
 
