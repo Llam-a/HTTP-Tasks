@@ -118,4 +118,16 @@ VD:
 
     - Miền cho biết máy chủ Web nào đang được yêu cầu. Thông thường, đây là một tên miền, nhưng địa chỉ IP cũng có thể được sử dụng (nhưng điều này rất hiếm vì nó kém tiện lợi hơn nhiều).
     
-    - Port cho biết gate sử dụng để truy cập tài nguyên trên máy chủ web. Nó thường được bỏ qua nếu máy chủ web sử dụng các Port tiêu chuẩn của giao thức HTTP (80 cho HTTP và 443 cho HTTPS) để cấp quyền truy cập vào tài nguyên của nó. Nếu không thì nó là bắt buộc.
+    - Port cho biết cổng được sử dụng để truy cập tài nguyên trên máy chủ web. Nó thường được bỏ qua nếu máy chủ web sử dụng các Port tiêu chuẩn của giao thức HTTP (80 cho HTTP và 443 cho HTTPS) để cấp quyền truy cập vào tài nguyên của nó. Nếu không thì nó là bắt buộc.
+
++Path to resource:
+
+  https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-path@x2.png
+
+  /path/to/myfile.html là đường dẫn đến tài nguyên của web sever. 
+
++Parameters(tham số):
+
+  https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-parameters@x2.png
+
+  ?key1=value1&key2=value2 là tham số
