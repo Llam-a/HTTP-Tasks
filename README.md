@@ -1,7 +1,6 @@
 # HTTP-Tasks
 *HTTP Protocol (HyperText Transfer Protocol)
 
- -HTTP là gì:
 - Sử dụng Port 80
 - Là giao thức tiêu chuẩn cho WWW (World Wide Web) để truyển tải dữ liệu dưới dạng văn bản, âm thanh, hình ảnh, video từ Web Server tới trình duyệt web của người dùng và ngược lại.HTTP cũng có thể được sử dụng để tìm nạp các phần của các doc nhằm cập nhật các trang web theo yêu cầu.
 - Là nền tảng của bất kỳ sự trao đổi dữ liệu nào trên Web và cũng là giao thức giữa client (thường là các trình duyệt hay bất kỳ loại thiết bị, chương trình nào) và server (thường là các máy tính trên đám mây)
@@ -366,6 +365,19 @@ Sử dụng Port 443
 Là giao thức truyền tải siêu văn bản an toàn. Thực chất, đây chính là giao thức HTTP nhưng tích hợp thêm Chứng chỉ bảo mật SSL nhằm mã hóa các thông điệp giao tiếp để tăng tính bảo mật. Có thể hiểu, HTTPS là phiên bản HTTP an toàn, bảo mật hơn.
 
 HTTPS hoạt động tương tự như HTTP, tuy nhiên được bổ sung thêm chứng chỉ SSL (Secure Sockets Layer – tầng ổ bảo mật) hoặc TLS (Transport Layer Security – bảo mật tầng truyền tải). Hiện tại, đây là các tiêu chuẩn bảo mật hàng đầu cho hàng triệu website trên toàn thế giới.
+
+*HTTP Proxies
+
+Proxy được hiểu đơn giản là sợi dây liên kết giữa người truy cập Internet và Internet, dùng để thực hiện chuyển tiếp thông tin và kiểm soát sự an toàn cho người dùng. Có thể nói, cách thức hoạt động của Proxy như một tường lửa (firewall), hoặc là một bộ lọc truy cập web.
+
+Có 2 sự khác biệt trong cách thức hoạt động của HTTP khi một proxy đang được sử dụng:
+
+  - Khi một trình duyệt đưa ra yêu cầu không được mã hóa HTTP tới một máy chủ proxy đầy đủ vào yêu cầu, bao gồm tiền tố giao thức http://, sever's hostname, và số pory nếu những điều này không chính xác. Các máy chủ proxy trích xuất hostname, port và sử dụng chúng để điều hướng yêu cầu đến đúng máy chủ web.
+
+  - Khi một HTTPS đang được sử dụng, trình duyệt không thể thực hiện bắt tay với SSL với máy chủ proxy, vì điều này sẽ phá vỡ đường hấm an toàn và để lại thông tin liên lạc dễ bị tấn công đánh chặn.Kể từ đây, trình duyệt phải sử dụng proxy làm chuyển tiếp cấp TCP thuần túy, chuyển tiếp tất cả dữ liệu mạng theo cả hai hướng giữa trình duyệt và máy chủ web đích mà trình duyệt thực hiện bắt tay SSL như bình thường. Để thiết lập chuyển tiếp này, trình duyệt tạo một yêu cầu HTTP tới máy chủ proxy bằng phương thức CONNECT và chỉ định tên máy chủ và số cổng làm URL. Nếu proxy cho phép yêu cầu, nó trả về phản hồi HTTP với trạng thái 200, giữ kết nối TCPmở và từ thời điểm đó trở đi hoạt động như một chuyển tiếp cấp TCP tới máy chủ web.
+
+
+
 
 
 
