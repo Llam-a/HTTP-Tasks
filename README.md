@@ -1,5 +1,5 @@
 # HTTP-Tasks
-*HTTP Protocol (HyperText Transfer Protocol)
+#HTTP Protocol (HyperText Transfer Protocol)
 
 - Sử dụng Port 80
 - Là giao thức tiêu chuẩn cho WWW (World Wide Web) để truyển tải dữ liệu dưới dạng văn bản, âm thanh, hình ảnh, video từ Web Server tới trình duyệt web của người dùng và ngược lại.HTTP cũng có thể được sử dụng để tìm nạp các phần của các doc nhằm cập nhật các trang web theo yêu cầu.
@@ -17,7 +17,7 @@
  -Điểm yếu:
 - Các thông tin được gửi đi qua giao thức HTTP (bao gồm địa chỉ IP, các thông tin mà bạn nhập vào website…) cũng không hề được mã hóa và bảo mật. Đây chính là kẽ hở mà nhiều hacker đã lợi dụng để đánh cắp thông tin người dùng, thường được gọi là tấn công sniffing. 
    
-*HTTP Requests
+#HTTP Requests
 
 - HTTP Request hiểu một cách đơn giản là các thông tin sẽ được gửi từ khách hàng (client) lên server. Server sẽ có nhiệm vụ tìm và xử lý các loại dữ liệu, thông tin, client mong muốn. HTTP Request có thể tồn tại dưới file text hoặc dưới dạng XML hoặc dạng Json. 
  
@@ -42,7 +42,7 @@
   
   +Request body cho phép client gừi đến yêu cầu bổ sung cần server thực hiện như: tạo mới hoặc cập nhật dữ liệu mà không thể truyền trên Header Parameters.Thường được sử dụng trong các phương thức Post, Put, Patch.
  
-*HTTP Responses
+#HTTP Responses
  
 - HTTP Response được gọi là “thông báo phản hồi HTTP“. Đây là kết quả server trả về cho client.
 
@@ -76,7 +76,7 @@
       - Client error responses (400 – 499)
       - Server error responses (500 – 599)
     
-*URL (Uniform Resource )
+#URL (Uniform Resource )
 
 - Mỗi website đều có 1 địa chỉ IP riêng gồm 1 dãy số dài và khó nhớ nên để thuận tiện cho việc truy cập, địa chỉ IP này được chuyển thành ngôn ngữ có thể dễ nhớ thành các URL
 
@@ -137,7 +137,7 @@ VD:
 
   `#SomewhereInTheDocument` Anchor link là sử dụng để nói về một liên kết trỏ đến một vùng nào đó được chỉ định trên một trang, nó khác với Anchor text. Anchor Text chỉ một từ hay một cụm từ khóa có chứa liên kết.Dấu `#`, còn được gọi là mã định danh phân đoạn, không bao giờ được gửi đền máy chủ cùng với yêu cầu.
   
-*HTTP Headers:
+#HTTP Headers:
 
 - Requesst Headers:
 
@@ -366,7 +366,7 @@ Là giao thức truyền tải siêu văn bản an toàn. Thực chất, đây c
 
 HTTPS hoạt động tương tự như HTTP, tuy nhiên được bổ sung thêm chứng chỉ SSL (Secure Sockets Layer – tầng ổ bảo mật) hoặc TLS (Transport Layer Security – bảo mật tầng truyền tải). Hiện tại, đây là các tiêu chuẩn bảo mật hàng đầu cho hàng triệu website trên toàn thế giới.
 
-*HTTP Proxies
+#HTTP Proxies
 
 Proxy được hiểu đơn giản là sợi dây liên kết giữa người truy cập Internet và Internet, dùng để thực hiện chuyển tiếp thông tin và kiểm soát sự an toàn cho người dùng. Có thể nói, cách thức hoạt động của Proxy như một tường lửa (firewall), hoặc là một bộ lọc truy cập web.
 
@@ -377,7 +377,7 @@ Có 2 sự khác biệt trong cách thức hoạt động của HTTP khi một p
   - Khi một HTTPS đang được sử dụng, trình duyệt không thể thực hiện bắt tay với SSL với máy chủ proxy, vì điều này sẽ phá vỡ đường hấm an toàn và để lại thông tin liên lạc dễ bị tấn công đánh chặn.Kể từ đây, trình duyệt phải sử dụng proxy làm chuyển tiếp cấp TCP thuần túy, chuyển tiếp tất cả dữ liệu mạng theo cả hai hướng giữa trình duyệt và máy chủ web đích mà trình duyệt thực hiện bắt tay SSL như bình thường. Để thiết lập chuyển tiếp này, trình duyệt tạo một yêu cầu HTTP tới máy chủ proxy bằng phương thức CONNECT và chỉ định tên máy chủ và số cổng làm URL. Nếu proxy cho phép yêu cầu, nó trả về phản hồi HTTP với trạng thái 200, giữ kết nối TCPmở và từ thời điểm đó trở đi hoạt động như một chuyển tiếp cấp TCP tới máy chủ web.
 
 
-*HTTP Authentication
+#HTTP Authentication
 
 Giao thưc HTTP bao gồm các cơ chế riêng để xác thực người dùng bằng cách sử dụng các lược đố xác thực khác nhau, bao gồm:
 
@@ -387,7 +387,7 @@ Giao thưc HTTP bao gồm các cơ chế riêng để xác thực người dùng
 
 - Digest: là một trong những phương thức đã thỏa thuận mà máy chủ web có thể sử dụng để thương lượng thông tin xác thực, chẳng hạn như tên người dùng hoặc mật khẩu, với trình duyệt web của người dùng. Điều này có thể được sử dụng để xác nhận danh tính của người dùng trước khi gửi thông tin nhạy cảm, chẳng hạn như lịch sử giao dịch ngân hàng trực tuyến.
 
-*HTTP Method:
+#HTTP Method:
 
 `GET`
 
