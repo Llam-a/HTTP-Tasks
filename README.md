@@ -76,18 +76,8 @@
       - Redirection messages (300 – 399)
       - Client error responses (400 – 499)
       - Server error responses (500 – 599)
-      
-      
-   
-   
-   
-  
+    
+*URL (Uniform Resource Location)
 
-
- 
- 
- 
-
-  
-
+- Là địa chỉ của tài nguyên duy nhất ở trên ưeb.Mỗi URL chỉ hợp lệ đến 1 tài nguyên duy nhất.Các tài nguyên đó có thể là trang HTML, tài liệu CSS, hình ảnh,..
 
