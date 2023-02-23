@@ -387,7 +387,34 @@ Giao thưc HTTP bao gồm các cơ chế riêng để xác thực người dùng
 
 - Digest: là một trong những phương thức đã thỏa thuận mà máy chủ web có thể sử dụng để thương lượng thông tin xác thực, chẳng hạn như tên người dùng hoặc mật khẩu, với trình duyệt web của người dùng. Điều này có thể được sử dụng để xác nhận danh tính của người dùng trước khi gửi thông tin nhạy cảm, chẳng hạn như lịch sử giao dịch ngân hàng trực tuyến.
 
+*HTTP Method:
 
+`GET`
+Phương thức `GET` yêu cầu biểu diễn tài nguyên đã chỉ định. Các yêu cầu sử dụng `GET` chỉ nên truy xuất dữ liệu.
+
+`HEAD`
+Phương thức `HEAD` yêu cầu một phản hồi giống với yêu cầu `GET`, nhưng không có phần thân phản hồi.
+
+`POST`
+Phương thức `POST` gửi một thực thể tới tài nguyên đã chỉ định, thường gây ra thay đổi về trạng thái hoặc tác dụng phụ trên máy chủ.
+
+`PUT`
+Phương thức `PUT` thay thế tất cả các biểu diễn hiện tại của tài nguyên đích bằng tải trọng yêu cầu
+
+`METHOD`
+Phương thức `DELETE` xóa tài nguyên đã chỉ định.
+
+`CONNECT`
+Phương thức `CONNECT` thiết lập một đường hầm tới máy chủ được xác định bởi tài nguyên.
+
+`OPTIONS`
+Phương thức `OPTIONS` mô tả các tùy chọn giao tiếp cho tài nguyên.
+
+`TRACE`
+Phương thức `TRACE` thực hiện kiểm tra vòng lặp thông báo dọc theo đường dẫn đến tài nguyên.
+
+`PATCH`
+Phương thức `PATCH` áp dụng các sửa đổi một phần cho tài nguyên.
 
 
 
