@@ -24,9 +24,9 @@
  
  ![image](https://user-images.githubusercontent.com/115911041/220544766-f3afe55a-eaad-40c1-a396-4ac7f600081b.png)
  
-  -Cấu trúc HTTP Request:
+ -Cấu trúc HTTP Request:
  
- - ![image](https://user-images.githubusercontent.com/115911041/220554196-992ed92a-d27e-4cf1-8e25-fce4ae7127bf.png) 
+- ![image](https://user-images.githubusercontent.com/115911041/220554196-992ed92a-d27e-4cf1-8e25-fce4ae7127bf.png) 
 
  +Request line: đây là dòng đầu tiên của HTTP Request, với ba loại chính là method (phương thức), path (đường dẫn) hay URL và HTTP version (phiên bản giao thức). Cụ thể:
 
@@ -97,7 +97,17 @@ VD:
 
   + URL tĩnh: Đây là URL không thể thay đổi. So với URL động, URL tĩnh được xếp hạng tốt hơn trong công cụ tìm kiếm, được index nhanh hơn.
 
-  -Cấu trúc của URL:
+ -Cấu trúc của URL:
 
   https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-all.png
+
+1. Scheme:
+
+  https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-protocol@x2_update.png
+
+  - Scheme đại diện cho phương thức mà trình duyệt web của bạn dùng để giao tiếp với server. Nhìn vào scheme, bạn sẽ biết được cách thức truyền tải dữ liệu giữa trình duyệt và server. Các loại scheme mà bạn sẽ thường gặp bao gồm:
+
+  - HTTP: xác định các hành động của máy chủ với thao tác của người dùng trên trình duyệt web bằng các lệnh nhất định. HTTP sẽ sử dụng Port 80 để giao tiếp.
+  - HTTPS: sử dụng SSL (Secure Socket Layer) để đảm bảo truyền dữ liệu an toàn giữa web server và trình duyệt website. HTTPS sẽ sử dụng port 433 để truyền dữ liệu.
+
 
