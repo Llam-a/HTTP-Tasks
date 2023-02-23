@@ -101,7 +101,7 @@ VD:
 
   https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-all.png
 
-1. Scheme:
++Scheme:
 
   https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-protocol@x2_update.png
 
@@ -110,4 +110,12 @@ VD:
   - HTTP: xác định các hành động của máy chủ với thao tác của người dùng trên trình duyệt web bằng các lệnh nhất định. HTTP sẽ sử dụng Port 80 để giao tiếp.
   - HTTPS: sử dụng SSL (Secure Socket Layer) để đảm bảo truyền dữ liệu an toàn giữa web server và trình duyệt website. HTTPS sẽ sử dụng port 433 để truyền dữ liệu.
 
++Authority (nhà cung cấp):
 
+  https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-authority.png
+
+  - Được phân tách khỏi scheme bằng kí tự ://. Authority bao gồm cả miền (ví dụ: www.example.com) và cổng (80), được phân tách bằng dấu hai chấm:
+
+    - Miền cho biết máy chủ Web nào đang được yêu cầu. Thông thường, đây là một tên miền, nhưng địa chỉ IP cũng có thể được sử dụng (nhưng điều này rất hiếm vì nó kém tiện lợi hơn nhiều).
+    
+    - Port cho biết gate sử dụng để truy cập tài nguyên trên máy chủ web. Nó thường được bỏ qua nếu máy chủ web sử dụng các Port tiêu chuẩn của giao thức HTTP (80 cho HTTP và 443 cho HTTPS) để cấp quyền truy cập vào tài nguyên của nó. Nếu không thì nó là bắt buộc.
