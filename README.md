@@ -77,7 +77,7 @@
       - Client error responses (400 – 499)
       - Server error responses (500 – 599)
     
-*URL (Uniform Resource Location)
+*URL (Uniform Resource )
 
 - Mỗi website đều có 1 địa chỉ IP riêng gồm 1 dãy số dài và khó nhớ nên để thuận tiện cho việc truy cập, địa chỉ IP này được chuyển thành ngôn ngữ có thể dễ nhớ thành các URL
 
@@ -140,8 +140,9 @@ VD:
   
 *HTTP Headers:
 
-Accept Fields
-Để chỉ định loại phản hồi nào được server chấp nhận thì các trường sau đây được sử dụng:
+- Requesst Headers:
+
+Accept Fields: Để chỉ định loại phản hồi nào được server chấp nhận thì các trường sau đây được sử dụng:
 
 Accept
 
@@ -190,13 +191,13 @@ Accept-Encoding: encodings
 
 Ví dụ:
 
-`Accept-Encoding: gzip
+    Accept-Encoding: gzip
 
-Accept-Encoding: *
+    Accept-Encoding: *
 
-Accept-Encoding: gzip;q=0.7
+    Accept-Encoding: gzip;q=0.7
 
-Accept-Language`
+    Accept-Language`
 
 Trường header Accept-Language cho server biết ngôn ngữ mà con người có thể đọc được mà server dự kiến sẽ trả về. Đây là một dấu hiệu và không nhất thiết phải được kiểm soát hoàn toàn bởi người dùng. Server phải luôn tránh ghi đè lựa chọn rõ ràng của người dùng. Cú pháp là:
 
@@ -329,3 +330,48 @@ User-Agent
 Trường header này gửi thông tin về client đến server. Ví dụ, cú pháp có thể như sau:
 
 `User-Agent: <product>/<product version> <comment>`
+
+- Response Headers:
+
+Acess-Control-Allow: cho biết liệu phản hồi có thể được chia sẻ với requesting code từ nguồn gốc đã cho hay không.
+
+Cache-Control: Chuyển các cache xác định tới trình duyệt
+
+Etag: 
+
+Exprise
+
+Location
+
+Pragma
+
+Sever
+
+Set-Cookie
+
+WWW-Authenticate
+
+X-Frame-Options
+
+*Cookies
+
+Một phần quan trọng của HTTP mà hầu hết các ứng dụng web dựa và. Thông thường, chúng có thể sử dụng để khai thác các lỗ hổng. Các cơ chế cookie cho phép máy chủ gửi các mục dữ liệu đến khách hàng, khách hàng lưu trữ và gửi lại cho máy chủ. Không giống như các loại parameters khác(tham số), cookie tiếp tục được gửi lại trong mỗi yêu cầu tiếp theo mà không có bất kỳ yêu cầu cụ thể nào hành động theo yêu cầu của ứng dụng hoặc người dùng.
+
+`Set-Cookie: tracking=tI8rk7joMx44S2Uu85nSWc`
+
+*HTTPS (Hypertext Transfer Protocol Secure)
+
+Sử dụng Port 443
+
+Là giao thức truyền tải siêu văn bản an toàn. Thực chất, đây chính là giao thức HTTP nhưng tích hợp thêm Chứng chỉ bảo mật SSL nhằm mã hóa các thông điệp giao tiếp để tăng tính bảo mật. Có thể hiểu, HTTPS là phiên bản HTTP an toàn, bảo mật hơn.
+
+HTTPS hoạt động tương tự như HTTP, tuy nhiên được bổ sung thêm chứng chỉ SSL (Secure Sockets Layer – tầng ổ bảo mật) hoặc TLS (Transport Layer Security – bảo mật tầng truyền tải). Hiện tại, đây là các tiêu chuẩn bảo mật hàng đầu cho hàng triệu website trên toàn thế giới.
+
+
+
+
+
+
+
+
+
