@@ -1,4 +1,4 @@
-# HTTP-Tasks
+zai# HTTP-Tasks
 *HTTP Protocol (HyperText Transfer Protocol)
 
  -HTTP là gì:
@@ -99,11 +99,11 @@ VD:
 
  -Cấu trúc của URL:
 
-  https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-all.png
+  [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-all.png]
 
 +Scheme:
 
-  https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-protocol@x2_update.png
+  [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-protocol@x2_update.png]
 
   - Scheme đại diện cho phương thức mà trình duyệt web của bạn dùng để giao tiếp với server. Nhìn vào scheme, bạn sẽ biết được cách thức truyền tải dữ liệu giữa trình duyệt và server. Các loại scheme mà bạn sẽ thường gặp bao gồm:
 
@@ -112,7 +112,7 @@ VD:
 
 +Authority (nhà cung cấp):
 
-  https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-authority.png
+  [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-authority.png]
 
   - Được phân tách khỏi scheme bằng kí tự ://. Authority bao gồm cả miền (ví dụ: www.example.com) và cổng (80), được phân tách bằng dấu hai chấm:
 
@@ -122,12 +122,12 @@ VD:
 
 +Path to resource:
 
-  https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-path@x2.png
+  [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-path@x2.png]
 
   /path/to/myfile.html là đường dẫn đến tài nguyên của web sever. 
 
 +Parameters(tham số):
 
-  https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-parameters@x2.png
+  [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-parameters@x2.png]
 
-  ?key1=value1&key2=value2 là tham số
+  ?key1=value1&key2=value2 là tham số được bổ sung cho máy chủ web. Các tham số đó là danh sách key/value được phân tách bằng kí hiệu '&'
