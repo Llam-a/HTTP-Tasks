@@ -1,5 +1,5 @@
 # HTTP-Tasks
-#HTTP Protocol (HyperText Transfer Protocol)
+# HTTP Protocol (HyperText Transfer Protocol)
 
 - Sử dụng Port 80
 - Là giao thức tiêu chuẩn cho WWW (World Wide Web) để truyển tải dữ liệu dưới dạng văn bản, âm thanh, hình ảnh, video từ Web Server tới trình duyệt web của người dùng và ngược lại.HTTP cũng có thể được sử dụng để tìm nạp các phần của các doc nhằm cập nhật các trang web theo yêu cầu.
