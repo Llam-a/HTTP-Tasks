@@ -97,4 +97,7 @@ VD:
 
   + URL tĩnh: Đây là URL không thể thay đổi. So với URL động, URL tĩnh được xếp hạng tốt hơn trong công cụ tìm kiếm, được index nhanh hơn.
 
+  -Cấu trúc của URL:
+
+  https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-all.png
 
