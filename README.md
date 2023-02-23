@@ -130,4 +130,4 @@ VD:
 
   [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-parameters@x2.png]
 
-  ?key1=value1&key2=value2 là tham số được bổ sung cho máy chủ web. Các tham số đó là danh sách key/value được phân tách bằng kí hiệu '&'
+  ?key1=value1&key2=value2 là tham số được bổ sung cho máy chủ web. Các tham số đó là danh sách key/value được phân tách bằng kí hiệu `&`
