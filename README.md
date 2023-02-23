@@ -79,5 +79,15 @@
     
 *URL (Uniform Resource Location)
 
-- Là địa chỉ của tài nguyên duy nhất ở trên ưeb.Mỗi URL chỉ hợp lệ đến 1 tài nguyên duy nhất.Các tài nguyên đó có thể là trang HTML, tài liệu CSS, hình ảnh,..
+- Mỗi website đều có 1 địa chỉ IP riêng gồm 1 dãy số dài và khó nhớ nên để thuận tiện cho việc truy cập, địa chỉ IP này được chuyển thành ngôn ngữ có thể dễ nhớ thành các URL
+
+- Địa chỉ dạng chữ này được gọi là đường dẫn URL. Nhiệm vụ của URL là sẽ đưa người truy cập đến đúng website cần tìm.
+
+vd: http://www.example.com
+- Có 2 loại URL: 
+
+  + URL động: Đây là URL có thể thay đổi. Thông thường, các diễn đàn hoặc website thiết kế mã nguồn mở sẽ dùng URL động. URL động bị đánh giá là không thân thiện với công cụ tìm kiếm.
+
+  + URL tĩnh: Đây là URL không thể thay đổi. So với URL động, URL tĩnh được xếp hạng tốt hơn trong công cụ tìm kiếm, được index nhanh hơn.
+
 
