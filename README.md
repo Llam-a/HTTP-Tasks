@@ -377,6 +377,16 @@ Có 2 sự khác biệt trong cách thức hoạt động của HTTP khi một p
   - Khi một HTTPS đang được sử dụng, trình duyệt không thể thực hiện bắt tay với SSL với máy chủ proxy, vì điều này sẽ phá vỡ đường hấm an toàn và để lại thông tin liên lạc dễ bị tấn công đánh chặn.Kể từ đây, trình duyệt phải sử dụng proxy làm chuyển tiếp cấp TCP thuần túy, chuyển tiếp tất cả dữ liệu mạng theo cả hai hướng giữa trình duyệt và máy chủ web đích mà trình duyệt thực hiện bắt tay SSL như bình thường. Để thiết lập chuyển tiếp này, trình duyệt tạo một yêu cầu HTTP tới máy chủ proxy bằng phương thức CONNECT và chỉ định tên máy chủ và số cổng làm URL. Nếu proxy cho phép yêu cầu, nó trả về phản hồi HTTP với trạng thái 200, giữ kết nối TCPmở và từ thời điểm đó trở đi hoạt động như một chuyển tiếp cấp TCP tới máy chủ web.
 
 
+*HTTP Authentication
+
+Giao thưc HTTP bao gồm các cơ chế riêng để xác thực người dùng bằng cách sử dụng các lược đố xác thực khác nhau, bao gồm:
+
+- Basic: là một cơ chế xác thực đơn giản gửi thông tin đăng nhập của người dùng dưới dạng chuỗi được mã hóa Base64 trong tiêu đề yêu cầu với mỗi thông báo.
+
+- NTLM:  là một bộ giao thức bảo mật của Microsoft nhằm cung cấp tính năng xác thực, tính toàn vẹn và tính bảo mật cho người dùng. NTLM là sự kế thừa của giao thức xác thực trong Microsoft LAN Manager, một sản phẩm cũ của Microsoft.
+
+- Digest: là một trong những phương thức đã thỏa thuận mà máy chủ web có thể sử dụng để thương lượng thông tin xác thực, chẳng hạn như tên người dùng hoặc mật khẩu, với trình duyệt web của người dùng. Điều này có thể được sử dụng để xác nhận danh tính của người dùng trước khi gửi thông tin nhạy cảm, chẳng hạn như lịch sử giao dịch ngân hàng trực tuyến.
+
 
 
 
