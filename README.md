@@ -84,8 +84,11 @@
 - Địa chỉ dạng chữ này được gọi là đường dẫn URL. Nhiệm vụ của URL là sẽ đưa người truy cập đến đúng website cần tìm.
 
 VD:
+    
      - https://developer.mozilla.org
+     
      - https://developer.mozilla.org/en-US/docs/Learn/
+    
      - https://developer.mozilla.org/en-US/search?q=URL
 
 - Có 2 loại URL: 
