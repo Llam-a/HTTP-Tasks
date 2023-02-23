@@ -1,4 +1,4 @@
-zai# HTTP-Tasks
+# HTTP-Tasks
 *HTTP Protocol (HyperText Transfer Protocol)
 
  -HTTP là gì:
@@ -99,11 +99,11 @@ VD:
 
  -Cấu trúc của URL:
 
-  [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-all.png]
+  ![image](https://user-images.githubusercontent.com/115911041/220884591-1b39148f-d51f-4e73-9272-9726d5989081.png)
 
 +Scheme:
 
-  [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-protocol@x2_update.png]
+  ![image](https://user-images.githubusercontent.com/115911041/220884663-1a1dfbb3-11dc-4c2f-8120-5949d46ced77.png)
 
   - Scheme đại diện cho phương thức mà trình duyệt web của bạn dùng để giao tiếp với server. Nhìn vào scheme, bạn sẽ biết được cách thức truyền tải dữ liệu giữa trình duyệt và server. Các loại scheme mà bạn sẽ thường gặp bao gồm:
 
@@ -112,7 +112,7 @@ VD:
 
 +Authority (nhà cung cấp):
 
-  [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-authority.png]
+  ![image](https://user-images.githubusercontent.com/115911041/220884730-848a6f06-9e00-415a-b9d5-5432da617dc6.png)
 
   - Được phân tách khỏi scheme bằng kí tự ://. Authority bao gồm cả miền (ví dụ: www.example.com) và cổng (80), được phân tách bằng dấu hai chấm:
 
@@ -122,18 +122,210 @@ VD:
 
 +Path to resource:
 
-  [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-path@x2.png]
+  ![image](https://user-images.githubusercontent.com/115911041/220884778-b060fe7a-524a-49ff-b558-1bbf2b992b92.png)
 
-  /path/to/myfile.html là đường dẫn đến tài nguyên của web sever. 
+  `/path/to/myfile.html` là đường dẫn đến tài nguyên của web sever. 
 
 +Parameters(tham số):
 
-  [https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-parameters@x2.png]
+  ![image](https://user-images.githubusercontent.com/115911041/220884846-f6fedb36-563d-4ecb-80ed-fdb59f138a51.png)
 
-  ?key1=value1&key2=value2 là tham số được bổ sung cho máy chủ web. Các tham số đó là danh sách key/value được phân tách bằng kí hiệu `&`.Máy chử web có thể sử dụng tham số để thực hiện công việc bổ sung trước khi trả lại tài nguyên
+  `?key1=value1&key2=value2` là tham số được bổ sung cho máy chủ web. Các tham số đó là danh sách key/value được phân tách bằng kí hiệu `&`.Máy chử web có thể sử dụng tham số để thực hiện công việc bổ sung trước khi trả lại tài nguyên
 
 +Anchor:
 
-  https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/mdn-url-anchor@x2.png
+ ![image](https://user-images.githubusercontent.com/115911041/220884915-2e073e1a-5185-4d05-b689-f9386dd37629.png)
 
-  #SomewhereInTheDocument 
+  `#SomewhereInTheDocument` Anchor link là sử dụng để nói về một liên kết trỏ đến một vùng nào đó được chỉ định trên một trang, nó khác với Anchor text. Anchor Text chỉ một từ hay một cụm từ khóa có chứa liên kết.Dấu `#`, còn được gọi là mã định danh phân đoạn, không bao giờ được gửi đền máy chủ cùng với yêu cầu.
+  
+*HTTP Headers:
+
+Accept Fields
+Để chỉ định loại phản hồi nào được server chấp nhận thì các trường sau đây được sử dụng:
+
+Accept
+
+Trường này thông báo cho server loại dữ liệu nào có thể được trả về.
+
+Trường Accept trong request HTTP có thể được sử dụng để chỉ định các loại MIME nhất định được client chấp nhận. Cú pháp chung như sau:
+
+`<>Accept: <MIME_type>/<MIME_subtype> ;q=value`
+
+Nhiều loại phương tiện có thể được phân tách bằng dấu phẩy. Giá trị tùy chọn q biểu thị mức chất lượng trên thang điểm từ 0 đến 1. Ví dụ:
+
+`Accept: text/plain; q = 0,5, text/html, text/x-dvi; q = 0.8, Text/x-c`
+
+Các chỉ thị có sẵn:
+
+client hỗ trợ chính xác một loại MIME, chẳng hạn như văn bản/html:
+
+`<MIME_type>/<MIME_subtype>`
+
+MIME không có loại phụ được chỉ định. image/* khớp với image/png, image/svg, image/gif và tất cả các loại hình ảnh khác: /*.
+
+`<MIME_type>/*`
+
+Bất kỳ loại MIME nào:
+`*/*`
+
+Mỗi giá trị được sử dụng được đưa vào một thứ tự ưu tiên được biểu thị bằng cách sử dụng giá trị chất lượng tương đối được gọi là trọng số:
+
+`;q= (trọng số hệ số q)`
+
+Accept-Charset
+
+Trường này được sử dụng trong các HTTP Header để chỉ định bộ ký tự nào mà client chấp nhận cho phản hồi.
+
+Accept-Charset: character-set
+
+Nếu một số bộ ký tự được chỉ định, hãy nhập chúng cách nhau bằng dấu phẩy. Ví dụ:
+
+`Accept-Charset: iso-8859-5, Unicode-1-1; q = 0,8`
+
+Accept-Encoding
+
+Trường này giới hạn các thuật toán mã hóa được chấp nhận trong phản hồi. Cú pháp:
+
+Accept-Encoding: encodings
+
+Ví dụ:
+
+`Accept-Encoding: gzip
+
+Accept-Encoding: *
+
+Accept-Encoding: gzip;q=0.7
+
+Accept-Language`
+
+Trường header Accept-Language cho server biết ngôn ngữ mà con người có thể đọc được mà server dự kiến sẽ trả về. Đây là một dấu hiệu và không nhất thiết phải được kiểm soát hoàn toàn bởi người dùng. Server phải luôn tránh ghi đè lựa chọn rõ ràng của người dùng. Cú pháp là:
+
+`Accept-Language: <language>; q=qvalue`
+
+Nhiều ngôn ngữ có thể được phân tách bằng dấu phẩy. Ví dụ:
+
+`Accept-Language: en-US; q=0.9`
+
+Có thể tra cứu các giá trị được phép trong RFC 1766.
+Authorization
+
+Trường Authorization được sử dụng trong HTTP Header để xác thực tác nhân người dùng với server. Cú pháp như sau:
+
+`Authorization:<type> <credentials>`
+
+Cookie
+
+header request HTTP Cookie chứa các cookie HTTP được lưu trữ trong các cặp tên/giá trị được server gửi trước đó bằng header Set-Cookie. Hành vi này có thể bị chặn bởi các trình duyệt để không có cookie nào được truyền đến server.
+
+`Cookie: name1=value1; name2=value2; name3=value3`
+
+Expect
+
+Trường header request HTTP Mong đợi chỉ định các kỳ vọng của client mà server phải đáp ứng để request được xử lý đúng cách.
+
+Cú pháp chung như sau:
+
+`Expect : 100-continue`
+
+From
+
+Trường From của HTTP Header chứa địa chỉ email của người dùng kiểm soát ứng dụng khách request. Ví dụ:
+
+`From: bkhost@example.com`
+
+Trường From có thể được sử dụng trong các HTTP Header cho mục đích ghi nhật ký.
+
+Host
+Trường server được sử dụng trong các HTTP Header để chỉ định server internet và số cổng cho tài nguyên được request. Cú pháp là:
+
+`Host: host:port`
+
+Nếu số cổng bị thiếu, điều này có nghĩa là cổng mặc định 80.
+
+If Fields
+
+Các trường sau đây được sử dụng để chỉ định các điều kiện nhất định theo đó các tệp được request sẽ được trả về.
+
+If-Match
+
+Trường header này nhắc server chỉ gửi tệp được request nếu nó khớp với các thẻ thực thể được chỉ định. Cú pháp là:
+
+`If-Match: entity-tag`
+
+Ví dụ:
+
+`If-Match: "*"`
+
+Dấu hoa thị (*) cho biết có thể gửi bất kỳ tệp nào.
+
+If-Modified-Since
+
+If-Modified-Since được chỉ định trong HTTP Header, tài nguyên được request sẽ chỉ được server phân phối nếu nó đã được thay đổi kể từ ngày được chỉ định. Nếu không, sẽ không có giao hàng và trang sẽ được tải từ bộ đệm của trình duyệt. Cú pháp:
+
+`If-Modified-Since: HTTP date`
+
+Ví dụ:
+
+`If-Modified-Since: Sat, 13 Oct 2017 15:16:27 GMT`
+
+If-None-Match
+
+Trường này nhắc server chỉ gửi tệp được request nếu nó không khớp với bất kỳ thẻ thực thể nào được chỉ định. Cú pháp là:
+
+`If-None-Match: entity-tag`
+
+Ví dụ:
+
+`If-None-Match: "xyzzy"`
+
+`If-None-Match: *`
+
+If-Range
+
+Trường header If-Range được sử dụng trong các HTTP Header để chỉ request một phần nội dung bị thiếu nếu nội dung chưa được thay đổi và toàn bộ nội dung nếu một thay đổi đã được thực hiện đối với nó. Cú pháp như sau:
+
+`If-Range: entity-tag/HTTP date`
+
+Có thể sử dụng thẻ thực thể hoặc ngày:
+
+`If-Range: Sat, 13 Oct 2017 15:16:27 GMT`
+
+Nếu nội dung chưa được thay đổi, server sẽ trả về phạm vi byte được chỉ định bởi header phạm vi. Nếu không, toàn bộ tài liệu mới được trả lại.
+
+If-Unmodified-Since
+
+Cú pháp chung là:
+
+`If-Unmodified-Since: HTTP date`
+
+Trường này được sử dụng giống như trường If-Modified-Since field.
+
+Proxy-Authorization
+
+Trường header Proxy-Authorization cho phép client xác định chính nó hoặc người dùng với proxy. Cú pháp:
+
+`Proxy-Authorization: <type> <credentials>`
+
+Range
+
+Trường header Phạm vi chỉ định các phạm vi phụ của nội dung được request. Cú pháp là:
+
+`Range: bytes-unit=first-byte-pos "-" [last-byte-pos]`
+
+Các giá trị “first-byte-pos” và “last-byte-pos” chỉ định byte đầu tiên và byte cuối cùng của nội dung được bao gồm nhưng không nhất thiết phải được chỉ định cả hai. Nhiều khu vực nội dung có thể được phân tách bằng dấu phẩy.
+
+Referrer
+
+Trường header Người giới thiệu cho phép khách hàng chỉ định địa chỉ (URL) của tài nguyên mà URL được request từ đó. Cú pháp chung như sau:
+
+`Referer: URL`
+
+Ví dụ:
+
+`Referer: http://www.example.com`
+
+User-Agent
+
+Trường header này gửi thông tin về client đến server. Ví dụ, cú pháp có thể như sau:
+
+`User-Agent: <product>/<product version> <comment>`
