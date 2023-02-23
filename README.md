@@ -83,7 +83,10 @@
 
 - Địa chỉ dạng chữ này được gọi là đường dẫn URL. Nhiệm vụ của URL là sẽ đưa người truy cập đến đúng website cần tìm.
 
-vd: http://www.example.com
+VD:
+ https://developer.mozilla.org
+ https://developer.mozilla.org/en-US/docs/Learn/
+ https://developer.mozilla.org/en-US/search?q=URL
 - Có 2 loại URL: 
 
   + URL động: Đây là URL có thể thay đổi. Thông thường, các diễn đàn hoặc website thiết kế mã nguồn mở sẽ dùng URL động. URL động bị đánh giá là không thân thiện với công cụ tìm kiếm.
