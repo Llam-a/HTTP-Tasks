@@ -354,9 +354,17 @@ X-Frame-Options
 
 # Cookies
 
+Cookies là các tệp được trang web người dùng truy cập tạo ra. Cookie giúp trải nghiệm trực tuyến của bạn dễ dàng hơn bằng cách lưu thông tin duyệt web. Với Cookies, các trang web có thể duy trì trạng thái đăng nhập của bạn, ghi nhớ tùy chọn trang web và cung cấp nội dung phù hợp với vị trí của người dùng.Như vậy, Cookies thường được sử dụng để lưu lại thông tin của người dùng trên trình duyệt web.
+
 Một phần quan trọng của HTTP mà hầu hết các ứng dụng web dựa và. Thông thường, chúng có thể sử dụng để khai thác các lỗ hổng. Các cơ chế cookie cho phép máy chủ gửi các mục dữ liệu đến khách hàng, khách hàng lưu trữ và gửi lại cho máy chủ. Không giống như các loại parameters khác(tham số), cookie tiếp tục được gửi lại trong mỗi yêu cầu tiếp theo mà không có bất kỳ yêu cầu cụ thể nào hành động theo yêu cầu của ứng dụng hoặc người dùng.
 
 `Set-Cookie: tracking=tI8rk7joMx44S2Uu85nSWc`
+
+Cookies gồm có 2 loại:
+
+ - Cookies của bên thứ nhất do trang web mà người dùng truy cập tạo ra. Trang web được hiển thị trong thanh địa chỉ.
+
+ - Cookies của bên thứ ba do các trang web khác tạo ra. Các trang web này sở hữu một số nội dung như quảng cáo hoặc hình ảnh mà người dùng thấy trên trang web mình truy cập.
 
 # HTTPS (Hypertext Transfer Protocol Secure)
 
